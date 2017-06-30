@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Cat Clicker</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+<h1>Cat Clicker</h1>
+<img src="https://c2.staticflickr.com/2/1634/23699921890_ce7a36cbc7_c.jpg" alt="" id="cat">
+
+<script>
+var clicks = 0;
+var elem = document.getElementById('cat');
+elem.addEventListener('click', function(){
+  //the element has been clicked... do stuff here
+	clicks += 1;
+	document.getElementById("clicks").innerHTML = clicks;
+}, false);
+</script>
+<p>Total Clicks: <a id="clicks">0</a></p>
+    
+</body>
+</html>
