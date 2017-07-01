@@ -11,11 +11,18 @@
 <body>
 <h1>Cat Clicker</h1>
 <img src="https://c2.staticflickr.com/2/1634/23699921890_ce7a36cbc7_c.jpg" alt="" id="cat">
+<img src="https://c2.staticflickr.com/8/7113/6959127764_6611211de9_c.jpg" alt="" id="cat2">
 
 <script>
 var clicks = 0;
 var elem = document.getElementById('cat');
+var elem2 = document.getElementById('cat2');
 elem.addEventListener('click', function(){
+  //the element has been clicked... do stuff here
+	clicks += 1;
+	document.getElementById("clicks").innerHTML = clicks;
+}, false);
+elem2.addEventListener('click', function(){
   //the element has been clicked... do stuff here
 	clicks += 1;
 	document.getElementById("clicks").innerHTML = clicks;
