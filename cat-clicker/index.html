@@ -6,29 +6,16 @@
 <title>Cat Clicker</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
-<link href="" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <h1>Cat Clicker</h1>
-<img src="https://c2.staticflickr.com/2/1634/23699921890_ce7a36cbc7_c.jpg" alt="" id="cat">
-<img src="https://c2.staticflickr.com/8/7113/6959127764_6611211de9_c.jpg" alt="" id="cat2">
-
-<script>
-var clicks = 0;
-var elem = document.getElementById('cat');
-var elem2 = document.getElementById('cat2');
-elem.addEventListener('click', function(){
-  //the element has been clicked... do stuff here
-	clicks += 1;
-	document.getElementById("clicks").innerHTML = clicks;
-}, false);
-elem2.addEventListener('click', function(){
-  //the element has been clicked... do stuff here
-	clicks += 1;
-	document.getElementById("clicks").innerHTML = clicks;
-}, false);
-</script>
-<p>Total Clicks: <a id="clicks">0</a></p>
-    
+	<ul id="cat-list"></ul>
+	<div id="cat">
+		<h2 id="cat-name"></h2>
+		<div id="cat-count"></div>
+		<img id="cat-img" src="" alt="cute cats" width="640">
+	</div>
+<script src="js/clicker.js"></script>
 </body>
 </html>
